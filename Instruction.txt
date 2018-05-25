@@ -1,0 +1,18 @@
+Instruction
+
+Etape 1 : 
+-> Allez dans le fichier "popup.html"
+	Remplacer a la ligne 24
+		https://f2i.upgraduate.com par l'ardresse du site de votre E-Learning
+
+Etape 2 : 
+-> Allez dans le fichier "manifest.json"
+	Remplacer a la ligne 8 
+		 "https://f2i.upgraduate.com/*" par le site de l'e-learning rajouter /*
+	Remplacer à la ligne 
+		"https://f2i.upgraduate.com/*/*" par le site de l'e-learning rajouter /*/*
+
+Etape 3 :
+-> Ouvrer chrome
+	Plus d'outils > Extentions
+	Cliquer sur "CHARGEZ L'EXTENTION NON EMPACTEE" 

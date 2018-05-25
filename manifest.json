@@ -1,0 +1,26 @@
+{
+ "manifest_version": 2, // Indique la version du manifest 
+ "name": "E-learning", // Le nom de l'extention
+ "description": "E-learning speed", // La description de l'extention
+ "version": "1.1", // La version en en l'occurrence la première donc 1.2
+ "permissions": [ // Les permissions que requiert l'extention
+ 
+ "https://f2i.upgraduate.com/*",
+ "tabs"
+ ],
+ "browser_action": {  
+  "default_popup": "popup.html" // Le popup qui s'affichera quand vous cliquez sur l'îcone
+ },
+ "background": { // On rajoute le paramètre "background" Js qui tourne en fond.
+     "scripts": ["./js/script.js"]
+    },
+
+ "content_scripts": [
+    {
+      "matches": ["https://f2i.upgraduate.com/*/*"], //Execution sur la page f2i.
+      "js": ["./js/jquery.js","./js/script.js"], //Execution du script
+      "run_at": "document_start" //Execution au demarrage de la page
+    }
+  ]
+ 
+}
